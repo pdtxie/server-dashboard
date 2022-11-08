@@ -1,0 +1,159 @@
+@font-face {
+  font-family: quinta-pro-bold;
+  src: url(../src/assets/fonts/BwQuintaPro-Bold.woff2);
+}
+
+@font-face {
+  font-family: dank-mono;
+  src: url(../src/assets/fonts/Dank-Mono-Reg.otf);
+}
+
+
+
+:root {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+
+  --bg: #F2F4F8;
+  --text: #262626;
+  
+  
+  background-color: var(--bg);
+  font-family: quinta-pro-bold;
+  color: var(--text);
+
+  
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+  cursor: default;
+}
+
+:root[theme="dark"] {
+  --bg: #262626;
+  --text: #DADFF7
+}
+
+:root[theme="light"] {
+  --bg: #262626;
+  --text: #DADFF7
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #262626;
+    --text: #DADFF7
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #F2F4F8;
+    --text: #262626;
+  }
+} */
+
+main {
+  position: relative;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  max-height: 100vh;
+
+  padding: 0;
+  margin: 0;
+}
+
+.title-bar {
+  width: 90vw;
+  margin-bottom: 4.7rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+
+.mono {
+  font-family: dank-mono;
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 15vh;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #app { */
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+/* } */
+
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

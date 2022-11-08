@@ -1,0 +1,59 @@
+:root {
+    --c1: #EAAC8B;
+    --c2: #E56B6F;
+    --c3: #B56576;
+    --c4: #8C61A8;
+    --c5: #5387C4;
+    --c6: #8DAA91;
+}
+
+
+
+.box {
+    cursor: pointer;
+    width: 12.5rem;
+    height: 12.5rem;
+    
+    border-style: solid;
+    border-color: var(--c);
+    border-width: 0.625rem;
+
+    padding: 0.625rem;
+
+    position: relative;
+
+    color: var(--c);
+}
+
+.box:hover {
+    background-color: var(--c);
+    color: white;
+}
+
+.text {
+    color: inherit;
+    position: absolute;
+    bottom: 0.625rem;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.title-char {
+    font-size: 6.25rem;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    bottom: 4rem;
+
+    
+}
+  
+.subtitle {
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+}
