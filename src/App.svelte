@@ -13,9 +13,11 @@
     theme = "light";
   }
 
+  console.log(hour);
+
   if (hour >= 6 && hour < 12) {
     message = "Good morning!"
-  } else if (hour >= 12 && hour < 6) {
+  } else if (hour >= 12 && hour < 18) {
     message = "Good afternoon!"
   } else {
     message = "Good evening!"
