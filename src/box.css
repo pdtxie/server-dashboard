@@ -10,10 +10,8 @@
 
 
 .box {
-    cursor: pointer;
-    width: 12.5rem;
-    height: 12.5rem;
-    
+    cursor: pointer;        
+
     border-style: solid;
     border-color: var(--c);
     border-width: 0.625rem;
@@ -23,7 +21,25 @@
     position: relative;
 
     color: var(--c);
+
+    margin: 0;
 }
+
+@media(min-width: 601px) {
+    .box {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .box {
+        width: 80vw;
+        height: 6rem;
+    }
+}
+
 
 .box:hover {
     background-color: var(--c);
@@ -56,4 +72,21 @@
     font-size: 1.75rem;
     margin: 0;
     padding: 0;
+}
+
+
+@media(max-width: 600px) {
+    .text {
+        padding: 0;
+        margin: 0;
+        height: 3.89rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .title-char {
+        position: static;
+    }
 }

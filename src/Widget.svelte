@@ -42,19 +42,41 @@
 </main>
 
 <style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        max-height: 4rem;
-        /* background-color: aqua; */
+    @media(max-width: 800px) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            max-height: 4rem;
+            width: 90vw;
+            margin: 0;
+        }
+
+        .td {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1rem;
+            align-items: baseline;
+            margin: 0;
+        }
     }
 
-    .td {
-        display: flex;
-        flex-direction: column;
+    @media(min-width: 801px) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            max-height: 4rem;
+        }
+
+        .td {
+            display: flex;
+            flex-direction: column;
+        }
     }
+    
 
     /* .sep {
         border-left: 0.15rem solid var(--text);
