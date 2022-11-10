@@ -31,11 +31,10 @@
 <main>
     <div class="container">
         <div class="td">
-            <h2>{displayTime}</h2>
-            <h3>{displayDate}</h3>
+            <h2 id="time">{displayTime}</h2>
+            <div class="sep"></div>
+            <h3 id="date">{displayDate}</h3>
         </div>
-
-        <div class="sep"></div>
 
         <div class="weather"> </div>
     </div>
@@ -53,13 +52,26 @@
             margin: 0;
         }
 
+        #time {
+            font-size: 2.25rem;
+        }
+
+        .sep {
+            display: block;
+            width: 0.15rem;
+            height: 1rem;
+            background-color: var(--text);
+        }
+
         .td {
             display: flex;
             flex-direction: row;
-            column-gap: 1rem;
+            column-gap: 0.75rem;
             align-items: baseline;
             margin: 0;
         }
+
+
     }
 
     @media(min-width: 801px) {

@@ -97,6 +97,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 5vw;
   }
 }
 
@@ -125,15 +128,17 @@ body {
   bottom: 15vh;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 @media(max-width: 800px) {
   h1 {
+    font-size: 3.75rem;
     margin-bottom: 1.25rem;
   }
 }
 
-h1 {
-  font-size: 4rem;
-}
 
 h2 {
   font-size: 3rem;
