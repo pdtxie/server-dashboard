@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/65262710/202145961-6c201462-6868-4c0c-89be-24afb4e82b7d.png"
-       width="100"
-       height="100">
+  <img src="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png" class="gh-dark-mode-only" width="90" height="90">
+  <img src="https://user-images.githubusercontent.com/65262710/202154939-05e673a8-ed49-471a-8340-0115b156b5e9.png" class="gh-light-mode-only" width="90" height="90">
+  
 <h1 align="center">a very simple server dashboard</h4>
 </p>
 
@@ -9,18 +9,28 @@ this is a dashboard/portal for my home server
 
 if you use this, you'll need to change out all the hardcoded a/hrefs and the icon!
 
-![image](https://user-images.githubusercontent.com/65262710/200964201-411de68a-e386-4f2f-879e-5cb8b3314cf4.png)
-![image](https://user-images.githubusercontent.com/65262710/200964639-e6805967-e351-4329-8a49-13d0eaa921b7.png)
-<img src="https://user-images.githubusercontent.com/65262710/201225364-e120e2ac-c04b-4d3d-994f-1eeab76bca35.png" width="400px"/>
+<h3>INFO</h3>
 
-Features:
-- auto dark mode
-- responsive mobile/desktop ui
-- keybinds to auto open apps
-- time/date widget
-
-Info:
 - built with Svelte
 - font used is quinta pro and is subject to their copyright policies
+
+<h3>SCREENSHOTS</h3>
+<h4>DARK MODE</h4>
+<img src="https://user-images.githubusercontent.com/65262710/202151671-0444472c-abc3-48dc-b7e8-cf9fa559205b.png">
+
+<h4>LIGHT MODE</h4>
+<img src="https://user-images.githubusercontent.com/65262710/202151914-4e99366a-3c19-4c61-b822-b679b3c1ecc8.png">
+
+<h4>MOBILE UI</h4>
+<img src="https://user-images.githubusercontent.com/65262710/202152132-9e8048f2-1dde-4df9-879e-aa8f2842cedc.png" width="400px"/>
+
+<h3>FEATURES</h3>
+
+- auto dark mode
+- responsive mobile/desktop ui design
+- keybinds (based on the first char) to open apps
+- time/date widget
+- pwa for ios
+
 
 (inspired by YunoHost's home page)
