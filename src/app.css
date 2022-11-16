@@ -6,7 +6,7 @@
 /* phone */
 @media(max-width: 800px) {
   :root {
-    font-size: 14px;
+    font-size: 12px;
 
     margin-left: 5vw;
     margin-right: 5vw;
@@ -19,7 +19,7 @@
 /* monitor */
 @media(min-width: 801px) {
   :root {
-    font-size: 16px;
+    font-size: 14px;
 
     margin-left: 5vw;
     margin-right: 5vw;
