@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png" class="gh-dark-mode-only" width="90" height="90">
-  <img src="https://user-images.githubusercontent.com/65262710/202154939-05e673a8-ed49-471a-8340-0115b156b5e9.png" class="gh-light-mode-only" width="90" height="90">
+  <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/65262710/202154939-05e673a8-ed49-471a-8340-0115b156b5e9.png">
+    <img alt="icon" src="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png" width="90" height="90"
+  </picture>
   
 <h1 align="center">a very simple server dashboard</h4>
 </p>
