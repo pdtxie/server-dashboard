@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import Box from './Box.svelte';
 	import Widget from './Widget.svelte';
@@ -12,26 +12,7 @@
 		return ((hour > 17 || hour < 6) ? "dark" : "light");
 	}
 
-	function getCurrentMessage() {
-		let time = new Date();
-		let hour = time.getHours();
-
-		let message;
-		
-		if (hour >= 6 && hour < 12) {
-			message = "Good Morning!";
-		} else if (hour >= 12 && hour < 18) {
-			message = "Good Afternoon!";
-		} else {
-			message = "Good Evening!";
-		}
-
-		return message;
-	}
-
-	
 	let theme = getCurrentTheme();
-	let message = getCurrentMessage();
 	
 	const boxes = configuration.boxes;
 	
@@ -39,60 +20,51 @@
 		document.documentElement.setAttribute("theme", theme);
 	});
 	
+	/*
 	onkeydown = (e) => {
 		switch (e.key.toLowerCase()) {
-			case "r":
-			window.open(boxes[1].href, '_self');
-			break;
-			
-			case "s":
-			window.open(boxes[2].href, '_self');
-			break;
-			
-			case "j":
-			window.open(boxes[3].href, '_self');
-			break;
-			
-			case "p":
-			window.open(boxes[6].href, '_self');
-			break;
-			
-			
-			case "h":
-			window.open(boxes[7].href, '_self');
-			break;
-			
-			case "j":
-			window.open(boxes[8].href, '_self');
-			break;
+			// ... all your cases here
 		} 
 	}
+	*/
 </script>
 
 <main>
 	<div id="parent-flex">
 		<div id="group1">
 			<div class="title-bar">
-				<h1>{message}</h1>
+				<p id="title">title</p>
 				
 				<Widget theme={getCurrentTheme()}/>
 			</div>
 			
 			<div class="grid">
-				{#each boxes as box}
-					<Box {box}/>
+				{#each boxes as box, i}
+					<Box {box} boxColour={configuration.colours[i]}/>
 				{/each}
 			</div>
 		</div>
 		
 		<div id="dummy-flex"></div>
 		
-		<p id="server-info">pdtserver.local [192.168.1.2:2345]</p>
+		<p id="server-info">something here...</p>
 	</div>
 </main>
 
 
 <style>
+	#title {
+		font-size: 3.4rem;
+	}
+
+	@media(max-width: 750px) {
+		#title {
+			font-size: 3.8rem;
+			margin-bottom: 0.6rem;
+			line-height: 3.75rem;
+		}
+	}
+
 	#server-info {
 		font-family: space-mono;
 		font-size: 13px;
@@ -117,7 +89,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-items: left;
-			margin-bottom: 2.5rem;
+			margin-bottom: 2rem;
 		}
 		
 		.grid {

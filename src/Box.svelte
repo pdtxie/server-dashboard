@@ -1,11 +1,11 @@
 <script>
-    export let box;
+    export let box, boxColour;
 </script>
 
 <!-- svelte-ignore security-anchor-rel-noreferrer -->
 <a rel="noreferrer noopener" href={box.href}>
-    <div class="box" style="--c: {box.colour}">
-        <div class="text" style="--c: {box.colour}">
+    <div class="box" style="--c: {boxColour}">
+        <div class="text" style="--c: {boxColour}">
             <p class="title-char">{box.name[0].toUpperCase()}</p>
             <p class="subtitle">{box.name}</p>
         </div>
@@ -28,11 +28,12 @@
 
     @media(min-width: 751px) {
         .box {
-            border-width: 0.675rem;
-            padding: 0.675rem;
+            border-width: 0.58rem;
+            padding: 0.65rem;
 
-            width: min(12.5rem, max(15vw, 10vh));
-            height: min(12.5rem, max(15vw, 10vh));
+            --size: 10rem;
+            width: var(--size);
+            height: var(--size);
         }
     }
 
@@ -51,11 +52,11 @@
         background-color: rgb(var(--c));
         color: white;
 
-        box-shadow: 0px 0px 28px 6px rgba(var(--c), 0.28);
+        box-shadow: 0px 0px 28px 8px rgba(var(--c), 0.3);
     }
 
     .box:active {
-        box-shadow: 0px 0px 28px 6px rgba(var(--c), 0.48);
+        box-shadow: 0px 0px 28px 8px rgba(var(--c), 0.36);
     }
 
     .text {
@@ -78,7 +79,7 @@
     }
     
     .subtitle {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     @media(min-width: 751px) {
@@ -88,8 +89,8 @@
 
         .title-char {
             position: absolute;
-            bottom: 4.5rem;
-            font-size: 7rem;
+            bottom: 3.6rem;
+            font-size: 5.6rem;
         }
     }
 
@@ -110,6 +111,10 @@
             align-items: end;
 
             gap: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.75rem;
         }
 
         .title-char {

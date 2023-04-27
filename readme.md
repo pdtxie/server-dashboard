@@ -1,35 +1,26 @@
 <p align="center">
-  <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/65262710/202154939-05e673a8-ed49-471a-8340-0115b156b5e9.png">
-    <img alt="icon" src="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png" width="90" height="90"
-  </picture>
-  
-<h1 align="center">a simple server dashboard</h4>
+  <img alt="banner-dashboard2x" src="https://user-images.githubusercontent.com/65262710/235392473-a301b8ca-7f81-42fe-b1c0-c77900ecd8ec.png">
+
+<h1 align="center">a (home) server dashboard</h4>
 </p>
 
-this is a dashboard/portal for my home server
-if you use this, you'll need to change out the icon!
-
-<h2>INFO</h2>
-
+## Info
 - built with Svelte
-- fonts used: quinta pro and space mono, subject to their respective copyright policies
+- fonts used: quinta pro and space mono, **subject to their respective copyright policies**
+ 
+**Demo:** you can view an interactive demo of this portal [here](https://demos.tim-xie.com/server-dashboard)
+
+**Note:** this is a dashboard/portal for my personal server, so if you use this, you'll need to change out the icon!
 
 
-<h2>SCREENSHOTS</h2>
-<h3>LIGHT MODE (phone/desktop)</h3>
+## Screenshots
+### LIGHT MODE
+![light](https://github.com/pdtxie/server-dashboard/assets/65262710/603b0f5b-463d-445e-b247-f75e4628e1c5)
 
+### DARK MODE & MOBILE
+![dark](https://github.com/pdtxie/server-dashboard/assets/65262710/f44a2004-0d7c-4953-a3c3-17ef710f800a)
 
- <img src="https://user-images.githubusercontent.com/65262710/234772764-465da4a6-edef-4b2a-9981-e76f2cd54b5a.png" width="22.32%"/> <img src="https://user-images.githubusercontent.com/65262710/234770224-08d974f6-1529-4baa-aab1-ff82f4110a1a.PNG" width="77%"/>
-
-
-<h3>DARK MODE (OLED)</h3>
-<img src="https://user-images.githubusercontent.com/65262710/234770255-969a1959-bfaa-42d1-bc80-de98763060af.PNG"/>
-
-
-<h2>FEATURES</h2>
-
+## Features
 - auto dark mode based on time
 - responsive mobile/desktop ui design
 - keybinds (based on the first char) to open apps
@@ -39,9 +30,8 @@ if you use this, you'll need to change out the icon!
 - fully configurable via json
 - looks nice :)
 
-<h3>EXAMPLE CONFIGURATION</h3>
-
-```
+## Example Config
+```json
 {
     "boxes": [
         { "name": "Jellyfin", "colour": "181, 101, 118", "href": "http://192.168.1.2:8096" },
@@ -51,8 +41,17 @@ if you use this, you'll need to change out the icon!
         
         { "name": "PiHole", "colour": "101, 97, 168", "href": "http://192.168.1.2/admin" },
         { "name": "Home Assistant", "colour": "83, 135, 196", "href": "http://192.168.1.2:8123" }
+    ],
+    "colours": [
+        "232, 209, 142",
+        "233, 190, 140",
+        "234, 172, 139",
+        "231, 139, 125",
+        "229, 107, 111",
+        "205, 104, 114",
     ]
 }
 ```
+(note you can have more colours than boxes)
 
-###### inspired by [YunoHost's home page](https://yunohost.org/)
+##### inspired by [YunoHost's home page](https://yunohost.org/)

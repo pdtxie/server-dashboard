@@ -89,32 +89,14 @@
 }
 
 
-h1 {
-	font-size: 4rem;
-}
-
-@media(max-width: 750px) {
-	h1 {
-		font-size: 3.75rem;
-		margin-bottom: 1.25rem;
-		line-height: 3.75rem;
-	}
-}
 
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.2rem;
 	text-align: right;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 1.2rem;
-}
-
-h3 {
-	font-size: 1.5rem;
-	text-align: right;
-	padding: 0;
-	margin: 0;
+	margin-bottom: 0.2rem;
 }
 
 body {
