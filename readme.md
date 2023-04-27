@@ -9,6 +9,7 @@
 </p>
 
 this is a dashboard/portal for my home server
+
 if you use this, you'll need to change out the icon!
 
 <h2>INFO</h2>
