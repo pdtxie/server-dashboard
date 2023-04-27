@@ -1,0 +1,123 @@
+@font-face {
+	font-family: quinta-pro-bold;
+	src: url(./fonts/BwQuintaPro-Bold.woff2);
+}
+
+@font-face {
+	font-family: space-mono;
+	src: url(./fonts/SpaceMono-Bold.ttf);
+}
+
+
+
+
+/* phone */
+@media(max-width: 750px) {
+	:root {
+		font-size: 12px;
+		
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	#parent-flex {
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+	}
+
+	#dummy-flex {
+		min-height: 5vw;
+		flex: 2;
+	}
+}
+
+/* pc */
+@media(min-width: 751px) {
+	:root {
+		font-size: 14px;
+		
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	#parent-flex {
+		padding-top: min(12vh, 8vw);
+		padding-bottom: 5vh;
+	}
+
+	#dummy-flex {
+		min-height: 10vh;
+		flex: 2;
+	}
+}
+
+:root {
+	--bg: #F2F4F8;
+	--text: #262626;
+	
+	
+	background-color: var(--bg);
+	font-family: quinta-pro-bold;
+	color: var(--text);
+	
+	line-height: 24px;
+	font-weight: 400;
+	
+	
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	
+	cursor: default;
+}
+
+:root[theme="dark"] {
+	--bg: #000000;
+	--text: #F2F4F8;
+}
+
+:root[theme="light"] {
+	--bg: #F2F4F8;
+	--text: #000000;
+}
+
+
+h1 {
+	font-size: 4rem;
+}
+
+@media(max-width: 750px) {
+	h1 {
+		font-size: 3.75rem;
+		margin-bottom: 1.25rem;
+		line-height: 3.75rem;
+	}
+}
+
+
+h2 {
+	font-size: 3rem;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1.2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
