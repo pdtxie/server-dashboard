@@ -1,10 +1,6 @@
 <p align="center">
-  <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/65262710/202154939-05e673a8-ed49-471a-8340-0115b156b5e9.png">
-    <img alt="icon" src="https://user-images.githubusercontent.com/65262710/202154933-53c1bb2c-4949-454d-9df6-b2e48bb1bbc7.png" width="90" height="90"
-  </picture>
-  
+  <img width="901" alt="banner-dashboard2x" src="https://user-images.githubusercontent.com/65262710/235392473-a301b8ca-7f81-42fe-b1c0-c77900ecd8ec.png">
+
 <h1 align="center">a simple server dashboard</h4>
 </p>
 
