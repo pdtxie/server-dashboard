@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="901" alt="banner-dashboard2x" src="https://user-images.githubusercontent.com/65262710/235392473-a301b8ca-7f81-42fe-b1c0-c77900ecd8ec.png">
+  <img alt="banner-dashboard2x" src="https://user-images.githubusercontent.com/65262710/235392473-a301b8ca-7f81-42fe-b1c0-c77900ecd8ec.png">
 
 <h1 align="center">a simple server dashboard</h4>
 </p>
@@ -17,12 +17,13 @@ if you use this, you'll need to change out the icon!
 <h2>SCREENSHOTS</h2>
 <h3>LIGHT MODE (phone/desktop)</h3>
 
+![light](https://github.com/pdtxie/server-dashboard/assets/65262710/603b0f5b-463d-445e-b247-f75e4628e1c5)
 
- <img src="https://user-images.githubusercontent.com/65262710/234772764-465da4a6-edef-4b2a-9981-e76f2cd54b5a.png" width="22.32%"/> <img src="https://user-images.githubusercontent.com/65262710/234770224-08d974f6-1529-4baa-aab1-ff82f4110a1a.PNG" width="77%"/>
 
 
-<h3>DARK MODE (OLED)</h3>
-<img src="https://user-images.githubusercontent.com/65262710/234770255-969a1959-bfaa-42d1-bc80-de98763060af.PNG"/>
+<h3>DARK MODE (OLED), mobile interface</h3>
+
+![dark](https://github.com/pdtxie/server-dashboard/assets/65262710/f44a2004-0d7c-4953-a3c3-17ef710f800a)
 
 
 <h2>FEATURES</h2>
